@@ -1,0 +1,102 @@
+/* Navbar.css */
+
+/* Make the navbar take the full width of the screen */
+.navbar {
+    width: 100%;
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+/* Adjust the width of the search box and avatar */
+.search-box {
+    flex-grow: 1;
+}
+
+.avatar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    /* Adjust padding as needed */
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.navbar1 {
+    align-items: center;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    /* width: 100%; */
+}
+
+.search-box {
+    margin-left: 20px;
+    /* width: 400px; */
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    /* margin: auto; */
+    width: 300px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+@media only screen and (max-width: 576px) {
+    .bellIcon {
+        margin-right: 20px;
+    }
+
+    .messageIcon {
+        margin-right: 20px;
+    }
+
+    .avtarIcon {
+        margin-right: 20px;
+    }
+
+    .barIcon {
+        margin-right: 20px;
+    }
+
+    .search-box {
+        visibility: hidden;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar1 {
+        height: 3.675rem;
+        /* width: 100vh; */
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 7px;
+    }
+
+    .hamburger-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+}

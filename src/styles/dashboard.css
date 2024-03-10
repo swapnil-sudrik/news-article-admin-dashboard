@@ -1,0 +1,123 @@
+.dashboard-contain {
+    margin-left: 300px;
+
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: cursive;
+    background: linear-gradient(135deg, #cf2ed4 0%, #4a197b 100%);
+    /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.text-color {
+    color: gray;
+}
+
+.main-dashboard {
+    justify-content: center;
+}
+
+.main-dropdown {
+    font-size: 15px;
+    align-items: center;
+}
+
+.dropdown-title:hover {
+    background-color: rgb(239, 239, 239);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    margin-right: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.dropdown-icon1 {
+    margin-right: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-items {
+    max-height: fit-content;
+    transition: max-height 0.3s;
+    /* display: block; */
+}
+
+.dropdown-items.open-menu {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.dropdown-items1 {
+    max-height: fit-content;
+    display: none;
+    /* overflow: hidden; */
+}
+
+.dropdown-items1.open-menu1 {
+    max-height: 0px;
+    transition: max-height 0.3s;
+    display: inline;
+    /* overflow: visible; */
+}
+
+.list-itms:hover {
+    /* background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); */
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.list-link {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.list-link:hover {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+@media only screen and (max-width: 992px) {
+    .menu-contain {
+        display: none;
+    }
+
+    .dashboard-contain {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.scrollbox {
+    overflow: auto;
+    visibility: hidden;
+}
+
+.scrollbox-inner,
+.scrollbox:hover {
+    visibility: visible;
+}
+
+.vertical-line {
+    border-left: 1px solid gray;
+    /* Adjust the thickness and color as needed */
+    height: 100vh;
+    /* 100% of the viewport height */
+    position: fixed;
+    /* Fixed positioning so it stays in place even when scrolling */
+    top: 0;
+    /* Align the line to the top of the viewport */
+    left: 305px;
+    /* Center the line horizontally */
+    transform: translateX(-50%);
+    /* Adjust for the half-width of the line */
+    margin: 0;
+    padding-left: 10px;
+}

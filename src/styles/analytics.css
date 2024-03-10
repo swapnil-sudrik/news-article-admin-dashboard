@@ -1,0 +1,131 @@
+.analytics {
+  /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-color: #667eea;
+  height: 300px;
+  width: 100%;
+  display: flex;
+
+}
+
+.analytics h2,
+p {
+  margin-left: 6%;
+  color: white;
+}
+
+.part-one {
+  height: fit-content;
+  margin-top: -12%;
+  display: flex;
+}
+
+.part-two {
+  height: fit-content;
+  display: flex;
+}
+
+.part-three {
+  height: fit-content;
+  display: flex;
+}
+
+.sub-col {
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-col1 {
+  background-color: white;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.time {
+  background-color: white;
+  padding: 8px;
+  width: 250px;
+  text-align: center;
+  font-size: 17px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.cal-icon {
+  font-size: 14px;
+}
+
+.para p {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.svg-icon-div {
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .part-one {
+    display: grid;
+    height: fit-content;
+  }
+
+  .sub-col {
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width: 645px) {
+  .analytics {
+    display: block;
+  }
+
+}
+
+.progress-card {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.progress-item {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background-color: #4CAF50;
+  /* Default color for progress */
+  transition: width 0.3s ease;
+}
+
+/* Change progress bar color for different items */
+.progress-item:nth-child(2) .progress-fill {
+  background-color: #2196F3;
+}
+
+.progress-item:nth-child(3) .progress-fill {
+  background-color: #FFC107;
+}
+
+/* Add more rules for additional items as needed */
+
+.progress-label {
+  margin-top: 5px;
+  text-align: right;
+}
