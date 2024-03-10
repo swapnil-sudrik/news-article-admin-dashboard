@@ -8,8 +8,6 @@ Welcome to the admin dashboard for the News Article project. This dashboard allo
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -30,6 +28,8 @@ Run the following command to install the required Node.js modules:
 npm install
 
 # Run the Project:-
+
+## Usages
 npm start
 
 #This will launch the dashboard on [http://localhost:3000].
